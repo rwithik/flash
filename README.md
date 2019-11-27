@@ -1,5 +1,20 @@
 # flash
 
-A script to flash the caps lock led. Because only noobs use the caplock button.  
+Inspired by a reddit post sometime ago.  
+
+A script to flash the caps lock led. In morse code. Because who honestly uses the capslock button.  
 Probably needs sudo permissions.  
-Might not work on your machine. 
+Might not work on your machine.  
+
+### Usage
+
+- Clone the repo.
+- cd into the directory  
+```
+cd flash
+```
+- Run it
+
+```bash
+sudo ./flash "message"
+```

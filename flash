@@ -22,11 +22,10 @@ keys = morse.keys()
 for ch in text:
     if (ch not in keys):
         pass
-    print(ch)
     for c in morse[ch]:
         if c == '.':
             light()
-            sleep(0.5)
+            sleep(0.2)
             dark();
         elif c == '-':
             light()
