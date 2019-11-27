@@ -16,5 +16,5 @@ cd flash
 - Run it
 
 ```bash
-sudo ./flash "message"
+sudo python3 flash "message"
 ```

@@ -1,5 +1,3 @@
-#!/bin/python
-
 import json
 from time import sleep
 import sys
@@ -16,7 +14,10 @@ def dark():
 with open("./morse.json", 'r') as f:
     morse = json.load(f)
 
-text = sys.argv[1].lower()
+try:
+    text = sys.argv[1].lower()
+except:
+    print("Usege: python3 flash.py \"message\""
 keys = morse.keys()
 
 for ch in text:
