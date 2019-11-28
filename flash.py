@@ -17,12 +17,13 @@ with open("./morse.json", 'r') as f:
 try:
     text = sys.argv[1].lower()
 except:
-    print("Usege: python3 flash.py \"message\""
+    print("Usege: python3 flash.py \"message\"")
+
 keys = morse.keys()
 
 for ch in text:
     if (ch not in keys):
-        pass
+        continue
     for c in morse[ch]:
         if c == '.':
             light()
